@@ -1,0 +1,1 @@
+# MintegralAdSDK-Swift-Package

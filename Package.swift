@@ -15,29 +15,29 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(name: "MTGSDK",
-                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.1/MTGSDK.xcframework.zip",
-                      checksum: "fe959bfbf19648a1bb982370d65ca6507ef39ffff4550ccb9b5398a1646d734d"),
+                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.2/MTGSDK.xcframework.zip",
+                      checksum: "fc008a77ff636c784f5cbbe191d01df5e3222422c65afcd25cea5c1cb29b7536"),
         .binaryTarget(name: "MTGSDKBanner",
-                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.1/MTGSDKBanner.xcframework.zip",
-                      checksum: "5ee45ee426b7532c779c86740093eb147676b939415386f11619535ea02b35be"),
+                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.2/MTGSDKBanner.xcframework.zip",
+                      checksum: "7f820121f7542eeb8f604cf117d02bf6f8b1bcbcf341678bc0bab8de57cdd3bd"),
         .binaryTarget(name: "MTGSDKBidding",
-                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.1/MTGSDKBidding.xcframework.zip",
-                      checksum: "19eed475380c2dfbcfcc49e5a0279410989214e93c0857b5d897ec75ffcef872"),
+                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.2/MTGSDKBidding.xcframework.zip",
+                      checksum: "b0ab432759af5b17280b312006a7f39c68d8121214cdd36999250d753b9e2c6f"),
         .binaryTarget(name: "MTGSDKNewInterstitial",
-                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.1/MTGSDKNewInterstitial.xcframework.zip",
-                      checksum: "f1d48144e425603fff0b898ed7c2108315b18a962425898cc210225528928cab"),
+                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.2/MTGSDKNewInterstitial.xcframework.zip",
+                      checksum: "b2d54176a0b21343e41156885feb0f489d84fb3831e2f028e9ae49d19562749c"),
         .binaryTarget(name: "MTGSDKInterstitialVideo",
-                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.1/MTGSDKInterstitialVideo.xcframework.zip",
-                      checksum: "bde88004e9de2f412e717b6aa0a976c9938f567bf807e4c98c9167f74d639f79"),
+                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.2/MTGSDKInterstitialVideo.xcframework.zip",
+                      checksum: "10ea834df01c1732c048c340dcc28b534535e9716c91316bb8ea8f2e1e029fe7"),
         .binaryTarget(name: "MTGSDKReward",
-                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.1/MTGSDKReward.xcframework.zip",
-                      checksum: "9a46933426b98b86d67ba9f6ed720688ba05fa03a3894dcd242ca4d3a43e0ed1"),
+                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.2/MTGSDKReward.xcframework.zip",
+                      checksum: "8051e5de9d2efe8197f727dc0370306d2b5c084ac611842bcd0241a15dc7669b"),
         .binaryTarget(name: "MTGSDKSplash",
-                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.1/MTGSDKSplash.xcframework.zip",
-                      checksum: "1bde3dec993e629a8d176b3de8fbb4a25f08a12b6ea1cf81850408346416e06b"),
+                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.2/MTGSDKSplash.xcframework.zip",
+                      checksum: "112183ebcd363a3f37c5d5d9bcdcc5abd7534a642b5eecee727de109c217def3"),
         .binaryTarget(name: "MTGSDKNativeAdvanced",
-                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.1/MTGSDKNativeAdvanced.xcframework.zip",
-                      checksum: "e2b1f1a3feed86dfdbe2fb55c312af5455de6139c3436299c1193f921f3241bf"),
+                      url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.2/MTGSDKNativeAdvanced.xcframework.zip",
+                      checksum: "796cdd91dda19d1f3663f42d6fc2e1c6bc84ab7184756e064b9871a29f6691d4"),
       
         
         .target(
@@ -51,6 +51,9 @@ let package = Package(
                 .target(name: "MTGSDKReward"),
                 .target(name: "MTGSDKSplash"),
                 .target(name: "MTGSDKNativeAdvanced")
+            ],
+            resources: [
+                .copy("Resources/MTGResources.bundle")
             ],
             linkerSettings: [
                 .linkedFramework("UIKit"),

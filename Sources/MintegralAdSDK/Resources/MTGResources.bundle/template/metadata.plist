@@ -30,5 +30,12 @@
 		<key>name</key>
 		<string>video904</string>
 	</dict>
+	<key>https://local.com/sct/ios/8.0.7/260511/big201.zip</key>
+	<dict>
+		<key>path</key>
+		<string>big201</string>
+		<key>name</key>
+		<string>big201</string>
+	</dict>
 </dict>
 </plist>

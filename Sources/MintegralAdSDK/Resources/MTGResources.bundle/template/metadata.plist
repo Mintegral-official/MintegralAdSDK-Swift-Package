@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>https://local.com/sct/ios/8.1.6/260714/banner_default.zip</key>
+	<dict>
+		<key>path</key>
+		<string>banner_default</string>
+		<key>name</key>
+		<string>banner_default</string>
+	</dict>
+	<key>https://local.com/sct/ios/8.1.6/260723/mtg_uikit.zip</key>
+	<dict>
+		<key>path</key>
+		<string>mtg_uikit</string>
+		<key>name</key>
+		<string>mtg_uikit</string>
+	</dict>
 	<key>https://local.com/sct/ios/8.0.7/260430/customWebview.zip</key>
 	<dict>
 		<key>path</key>
@@ -36,6 +50,13 @@
 		<string>big201</string>
 		<key>name</key>
 		<string>big201</string>
+	</dict>
+	<key>https://local.com/sct/ios/8.0.7/260722/native_default.zip</key>
+	<dict>
+		<key>path</key>
+		<string>native_default</string>
+		<key>name</key>
+		<string>native_default</string>
 	</dict>
 </dict>
 </plist>
